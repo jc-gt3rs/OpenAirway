@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.04 174.04">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g id="_Radial_Repeat_" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <path class="cls-1" d="M106.96,105s31.22,36.53,1.87,60.64c-19.87,16.32-74.77,6.56-66.48-21.69,2.35-8.01,15.13-10.58,22.63-28.95,1.56-3.81,4.12-9.24,3.17-9.11,0,0,16.89,16.97,38.81-.89Z"/>
+      </g>
+      <g id="_Radial_Repeat_-2" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <path class="cls-1" d="M69.05,106.96s-36.53,31.22-60.64,1.87C-7.91,88.96,1.85,34.06,30.1,42.35c8.01,2.35,10.58,15.13,28.95,22.63,3.81,1.56,9.24,4.12,9.11,3.17,0,0-16.97,16.89.89,38.81Z"/>
+      </g>
+      <g id="_Radial_Repeat_-3" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <path class="cls-1" d="M67.08,69.05s-31.22-36.53-1.87-60.64c19.87-16.32,74.77-6.56,66.48,21.69-2.35,8.01-15.13,10.58-22.63,28.95-1.56,3.81-4.12,9.24-3.17,9.11,0,0-16.89-16.97-38.81.89Z"/>
+      </g>
+      <g id="_Radial_Repeat_-4" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <path class="cls-1" d="M105,67.08s36.53-31.22,60.64-1.87c16.32,19.87,6.56,74.77-21.69,66.48-8.01-2.35-10.58-15.13-28.95-22.63-3.81-1.56-9.24-4.12-9.11-3.17,0,0,16.97-16.89-.89-38.81Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

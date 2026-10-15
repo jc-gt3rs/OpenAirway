@@ -1,0 +1,43 @@
+# Xcode
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+build/
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Secrets, certificates and provisioning profiles
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.mobileprovision
+*.cer
+*.cert
+*.developerprofile
+*.keystore
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo

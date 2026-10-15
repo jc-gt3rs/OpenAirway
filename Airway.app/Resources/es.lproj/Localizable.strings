@@ -1,0 +1,165 @@
+/* Main popover */
+"popover_add_preset" = "Añadir un preset…";
+"popover_options" = "Opciones";
+"popover_language" = "Idioma";
+"popover_send_feedback" = "Enviar comentarios…";
+"popover_check_for_updates" = "Buscar actualizaciones…";
+"popover_checking_for_updates" = "Buscando actualizaciones…";
+"popover_up_to_date" = "Airway está actualizado";
+"popover_update_available" = "Actualización %@ disponible";
+"popover_downloading_update" = "Descargando actualización…";
+"popover_downloading_update_progress" = "Descargando actualización… %d%%";
+"popover_update_now" = "Actualizar a %@ ahora";
+"popover_installing_update" = "Instalando actualización…";
+"popover_update_failed" = "Error al buscar actualizaciones — Reintentar";
+"popover_about" = "Acerca de";
+"popover_close" = "Cerrar Airway";
+"popover_checking_license" = "Comprobando la licencia…";
+"popover_no_fan_air" = "Vaya, tienes un MacBook Air :>";
+"popover_no_fan" = "No se detectó ningún ventilador";
+"popover_mode_system" = "Controlado por el sistema";
+"popover_mode_manual" = "Anulación manual";
+"popover_mode_max" = "Velocidad máxima";
+"popover_connecting_helper" = "Conectando con el asistente...";
+"popover_repairing" = "Reparando...";
+"popover_repair_helper" = "Reparar asistente";
+"popover_fan_index" = "Ventilador %d";
+"popover_auto" = "Auto";
+"popover_manual" = "Manual";
+"popover_max" = "Máx.";
+"popover_show_rpm" = "Mostrar RPM en la barra de menús";
+"popover_show_temp" = "Mostrar temperatura en la barra de menús";
+"popover_show_icon" = "Mostrar ícono en la barra de menús";
+"popover_launch_at_login" = "Iniciar al iniciar sesión";
+"popover_use_fahrenheit" = "Usar Fahrenheit";
+"popover_fine_tune" = "Ajuste fino de la anulación manual";
+"popover_open_login_items" = "Abrir elementos de inicio de sesión";
+"popover_enable_helper_desc" = "Habilita la aplicación auxiliar para gestionar la velocidad de los ventiladores.";
+"popover_enabling" = "Habilitando...";
+"popover_enable" = "Habilitar";
+"popover_preset" = "Preset";
+"popover_selected" = "Seleccionado";
+"popover_not_selected" = "No seleccionado";
+
+/* Language section */
+"language_system" = "Sistema";
+
+/* Preset manager */
+"preset_sidebar_title" = "Presets";
+"preset_new" = "Nuevo preset";
+"preset_add" = "Añadir";
+"preset_add_help" = "Añadir preset";
+"preset_delete" = "Eliminar";
+"preset_delete_help" = "Eliminar el preset seleccionado";
+"preset_save" = "Guardar";
+"preset_name_label" = "Nombre";
+"preset_name_placeholder" = "Nombre del preset";
+"preset_icon_label" = "Ícono";
+"preset_type_label" = "Tipo";
+"preset_value_label" = "Valor";
+"preset_range_percentage" = "Rango permitido: 25% a 100%.";
+"preset_range_rpm" = "Rango permitido: %d a %d RPM.";
+"preset_nothing_to_show" = "Nada que mostrar";
+"preset_none_yet" = "Aún no hay presets";
+"preset_percentage" = "Porcentaje";
+"preset_rpm" = "RPM";
+"preset_delete_context" = "Eliminar preset";
+"preset_selected_a11y" = "Seleccionado";
+
+/* Symbol picker */
+"symbol_category_airflow" = "Flujo de aire";
+"symbol_category_devices" = "Dispositivos";
+"symbol_category_people" = "Personas";
+"symbol_category_objects" = "Objetos";
+"symbol_clear" = "Borrar";
+"symbol_emoji" = "Emoji";
+
+/* License / paywall */
+"license_err_email_empty" = "Introduce tu dirección de correo electrónico.";
+"license_err_email_too_long" = "La dirección de correo electrónico es demasiado larga.";
+"license_err_email_invalid" = "Introduce una dirección de correo electrónico válida.";
+"license_err_key_empty" = "Introduce tu clave de licencia.";
+"license_err_key_too_short" = "La clave de licencia es demasiado corta.";
+"license_err_key_too_long" = "La clave de licencia es demasiado larga.";
+"license_err_key_invalid_chars" = "La clave de licencia contiene caracteres no válidos.";
+"license_welcome" = "Bienvenido a Airway";
+"license_trial_prompt" = "Introduce tu correo electrónico para iniciar una prueba gratuita.";
+"license_email_placeholder" = "Dirección de correo electrónico";
+"license_start_trial" = "Iniciar prueba gratuita";
+"license_day_remaining" = "Queda 1 día";
+"license_days_remaining" = "Quedan %d días";
+"license_activate" = "Activar";
+"license_trial_ending" = "Tu prueba está por finalizar";
+"license_trial_ended" = "Tu prueba ha finalizado";
+"license_activate_prompt_ending" = "Activa tu licencia ahora para seguir usando Airway.";
+"license_activate_prompt_ended" = "Airway cuesta 1 $ o más; introduce tu clave de licencia para continuar.";
+"license_key_placeholder" = "Clave de licencia";
+"license_activate_license" = "Activar licencia";
+"license_get_license" = "Obtener una licencia";
+"license_activated_success" = "¡Licencia activada correctamente!";
+"license_verification_required" = "Se requiere verificación de licencia";
+"license_reactivate" = "Reactivar licencia";
+"license_contact_support" = "Contactar con soporte";
+
+/* Feedback */
+"feedback_title" = "Enviar comentarios";
+"feedback_email_placeholder" = "Correo electrónico (opcional, para poder responderte)";
+"feedback_disclaimer" = "Se adjuntan la versión de la app, la versión de macOS y los registros recientes de la app para ayudarnos a reproducir el problema.";
+"feedback_sent_success" = "Gracias, comentarios enviados.";
+"feedback_sent_failure" = "No se pudo enviar. Comprueba tu conexión e inténtalo de nuevo.";
+"feedback_send" = "Enviar";
+"feedback_placeholder_bug" = "¿Qué salió mal? ¿Qué esperabas que sucediera?";
+"feedback_placeholder_idea" = "¿Qué te gustaría que hiciera Airway?";
+"feedback_placeholder_other" = "Cuéntanos lo que quieras.";
+
+/* About */
+"about_version" = "Versión %@";
+"about_copyright" = "Copyright © 2026";
+"about_author" = "por John Cris Antor";
+
+/* Intent dialogs / errors */
+"intent_error_app_not_ready" = "Airway aún no está listo. Inténtalo de nuevo en un momento.";
+"intent_error_license_required" = "Airway necesita una licencia activa para controlar tus ventiladores. Abre Airway para iniciar una prueba o introducir tu licencia.";
+"intent_error_helper_unreachable" = "Airway no pudo comunicarse con su asistente de control de ventiladores. Abre Airway una vez para completar la configuración y vuelve a intentarlo.";
+"intent_error_preset_not_found" = "El preset \"%@\" ya no existe en Airway.";
+"intent_dialog_set_mode" = "Airway configurado en %@.";
+"intent_dialog_increase" = "La velocidad del ventilador aumentó un %d por ciento.";
+"intent_dialog_decrease" = "La velocidad del ventilador disminuyó un %d por ciento.";
+"intent_dialog_status" = "Los ventiladores giran a %d RPM y la temperatura es de %@.";
+
+"popover_show_mode_symbols" = "Show mode symbols";
+
+/* Onboarding (first launch) */
+"onboarding_page3_title" = "Comienza tu prueba gratuita";
+"onboarding_page3_subtitle" = "Introduce tu correo para desbloquear una prueba gratuita de 7 días. No se requiere tarjeta de crédito.";
+"onboarding_continue" = "Continuar";
+
+/* License window */
+"license_window_activated_title" = "La licencia de Airway está activada";
+"license_window_devices" = "Esta licencia está activa actualmente en %d/%d dispositivos";
+"license_window_email" = "Licencia de %@";
+"license_window_expires" = "Válida hasta %@";
+"license_window_beta" = "Licencia beta — nunca caduca";
+"popover_license" = "Licencia";
+"popover_activate_license" = "Activar licencia";
+"onboarding_fans_title" = "Control total de ventiladores";
+"onboarding_fans_subtitle" = "Tres modos cubren todo: desde navegar en silencio hasta pruebas de estrés térmico, con lecturas en vivo todo el tiempo.";
+"onboarding_presets_title" = "Presets";
+"onboarding_presets_subtitle" = "Guarda las configuraciones que realmente usas y cambia entre ellas en dos clics.";
+"onboarding_siri_title" = "Siri y Atajos";
+"onboarding_siri_subtitle" = "Airway incluye App Intents: tus ventiladores pasan a formar parte de tus automatizaciones.";
+"onboarding_menubar_title" = "Interfaz nativa en la barra de menús";
+"onboarding_menubar_subtitle" = "Un popover limpio con velocidad, selector de modo y temperatura, siempre a un clic.";
+"onboarding_back" = "Atrás";
+"onboarding_helper_note" = "Airway usa un pequeño asistente del sistema para controlar los ventiladores — macOS puede pedir tu contraseña una vez.";
+
+/* Appearance options */
+"popover_disable_liquid_glass" = "Desactivar liquid glass";
+"popover_appearance" = "Apariencia";
+"appearance_light" = "Claro";
+"appearance_system" = "Sistema";
+"appearance_dark" = "Oscuro";
+
+/* Fan control diagnostics & thermal safety */
+"popover_fan_control_unsupported" = "El firmware de este Mac rechazó el control manual de los ventiladores.";
+"popover_thermal_override" = "Temperatura alta: ventiladores al máximo por seguridad. Tu modo volverá cuando se enfríe.";

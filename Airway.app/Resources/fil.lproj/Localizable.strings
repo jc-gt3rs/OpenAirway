@@ -1,0 +1,165 @@
+/* Main popover */
+"popover_add_preset" = "Magdagdag ng preset…";
+"popover_options" = "Mga Opsyon";
+"popover_language" = "Wika";
+"popover_send_feedback" = "Magpadala ng Feedback…";
+"popover_check_for_updates" = "Tingnan ang mga Update…";
+"popover_checking_for_updates" = "Tinitingnan ang mga Update…";
+"popover_up_to_date" = "Napapanahon ang Airway";
+"popover_update_available" = "May Update na %@";
+"popover_downloading_update" = "Dina-download ang Update…";
+"popover_downloading_update_progress" = "Dina-download ang Update… %d%%";
+"popover_update_now" = "Mag-update sa %@ Ngayon";
+"popover_installing_update" = "Ini-install ang Update…";
+"popover_update_failed" = "Nabigo ang Pagsuri ng Update — Subukan Muli";
+"popover_about" = "Tungkol Dito";
+"popover_close" = "Isara ang Airway";
+"popover_checking_license" = "Sinusuri ang lisensya…";
+"popover_no_fan_air" = "Ang kulit, may MacBook Air ka pala :>";
+"popover_no_fan" = "Walang natukoy na fan";
+"popover_mode_system" = "Kontrolado ng Sistema";
+"popover_mode_manual" = "Manu-manong Pagsasaayos";
+"popover_mode_max" = "Pinakamataas na Bilis";
+"popover_connecting_helper" = "Kumokonekta sa helper...";
+"popover_repairing" = "Kinukumpuni...";
+"popover_repair_helper" = "Kumpunihin ang Helper";
+"popover_fan_index" = "Fan %d";
+"popover_auto" = "Auto";
+"popover_manual" = "Manu-mano";
+"popover_max" = "Todo";
+"popover_show_rpm" = "Ipakita ang RPM sa Menu Bar";
+"popover_show_temp" = "Ipakita ang Temperatura sa Menu Bar";
+"popover_show_icon" = "Ipakita ang Icon sa Menu Bar";
+"popover_launch_at_login" = "Buksan Kapag Nag-login";
+"popover_use_fahrenheit" = "Gamitin ang Fahrenheit";
+"popover_fine_tune" = "I-fine-tune ang Manu-manong Pagsasaayos";
+"popover_open_login_items" = "Buksan ang Login Items";
+"popover_enable_helper_desc" = "I-enable ang helper application para pamahalaan ang bilis ng fan.";
+"popover_enabling" = "Ineenable...";
+"popover_enable" = "I-enable";
+"popover_preset" = "Preset";
+"popover_selected" = "Napili";
+"popover_not_selected" = "Hindi napili";
+
+/* Language section */
+"language_system" = "Sistema";
+
+/* Preset manager */
+"preset_sidebar_title" = "Mga Preset";
+"preset_new" = "Bagong Preset";
+"preset_add" = "Idagdag";
+"preset_add_help" = "Magdagdag ng preset";
+"preset_delete" = "Tanggalin";
+"preset_delete_help" = "Tanggalin ang napiling preset";
+"preset_save" = "I-save";
+"preset_name_label" = "Pangalan";
+"preset_name_placeholder" = "Pangalan ng preset";
+"preset_icon_label" = "Icon";
+"preset_type_label" = "Uri";
+"preset_value_label" = "Halaga";
+"preset_range_percentage" = "Pinapayagang saklaw: 25% hanggang 100%.";
+"preset_range_rpm" = "Pinapayagang saklaw: %d hanggang %d RPM.";
+"preset_nothing_to_show" = "Walang ipapakita";
+"preset_none_yet" = "Wala pang preset";
+"preset_percentage" = "Porsyento";
+"preset_rpm" = "RPM";
+"preset_delete_context" = "Tanggalin ang Preset";
+"preset_selected_a11y" = "Napili";
+
+/* Symbol picker */
+"symbol_category_airflow" = "Daloy ng Hangin";
+"symbol_category_devices" = "Mga Device";
+"symbol_category_people" = "Mga Tao";
+"symbol_category_objects" = "Mga Bagay";
+"symbol_clear" = "I-clear";
+"symbol_emoji" = "Emoji";
+
+/* License / paywall */
+"license_err_email_empty" = "Pakilagay ang iyong email address.";
+"license_err_email_too_long" = "Masyadong mahaba ang email address.";
+"license_err_email_invalid" = "Pakilagay ang wastong email address.";
+"license_err_key_empty" = "Pakilagay ang iyong license key.";
+"license_err_key_too_short" = "Masyadong maikli ang license key.";
+"license_err_key_too_long" = "Masyadong mahaba ang license key.";
+"license_err_key_invalid_chars" = "May hindi wastong karakter ang license key.";
+"license_welcome" = "Maligayang Pagdating sa Airway";
+"license_trial_prompt" = "Ilagay ang iyong email para simulan ang libreng trial.";
+"license_email_placeholder" = "Email address";
+"license_start_trial" = "Simulan ang Libreng Trial";
+"license_day_remaining" = "1 araw na lang";
+"license_days_remaining" = "%d araw na lang";
+"license_activate" = "I-activate";
+"license_trial_ending" = "Malapit nang matapos ang iyong trial";
+"license_trial_ended" = "Natapos na ang iyong trial";
+"license_activate_prompt_ending" = "I-activate na ang iyong lisensya para patuloy na magamit ang Airway.";
+"license_activate_prompt_ended" = "Nagkakahalaga ng $1+ ang Airway, ilagay ang iyong license key para magpatuloy.";
+"license_key_placeholder" = "License key";
+"license_activate_license" = "I-activate ang Lisensya";
+"license_get_license" = "Kumuha ng lisensya";
+"license_activated_success" = "Matagumpay na na-activate ang lisensya!";
+"license_verification_required" = "Kailangan ng Pag-verify ng Lisensya";
+"license_reactivate" = "I-reactivate ang Lisensya";
+"license_contact_support" = "Makipag-ugnayan sa Suporta";
+
+/* Feedback */
+"feedback_title" = "Magpadala ng Feedback";
+"feedback_email_placeholder" = "Email (opsyonal, para makasagot kami)";
+"feedback_disclaimer" = "Isinasama ang bersyon ng app, bersyon ng macOS, at mga kamakailang in-app log para matulungan kaming maunawaan ang isyu.";
+"feedback_sent_success" = "Salamat — naipadala na ang feedback.";
+"feedback_sent_failure" = "Hindi maipadala. Suriin ang iyong koneksyon at subukang muli.";
+"feedback_send" = "Ipadala";
+"feedback_placeholder_bug" = "Ano ang nagkamali? Ano ang inaasahan mong mangyari?";
+"feedback_placeholder_idea" = "Ano ang gusto mong magawa ng Airway?";
+"feedback_placeholder_other" = "Sabihin mo sa amin ang kahit ano.";
+
+/* About */
+"about_version" = "Bersyon %@";
+"about_copyright" = "Copyright © 2026";
+"about_author" = "ni John Cris Antor";
+
+/* Intent dialogs / errors */
+"intent_error_app_not_ready" = "Hindi pa handa ang Airway. Pakisubukang muli sa ilang saglit.";
+"intent_error_license_required" = "Kailangan ng aktibong lisensya ang Airway para kontrolin ang iyong mga fan. Buksan ang Airway para simulan ang trial o ilagay ang iyong lisensya.";
+"intent_error_helper_unreachable" = "Hindi maabot ng Airway ang fan-control helper nito. Buksan ang Airway para tapusin ang setup, pagkatapos ay subukang muli.";
+"intent_error_preset_not_found" = "Ang preset na \"%@\" ay wala na sa Airway.";
+"intent_dialog_set_mode" = "Naka-set na ang Airway sa %@.";
+"intent_dialog_increase" = "Tumaas ang bilis ng fan nang %d porsyento.";
+"intent_dialog_decrease" = "Bumaba ang bilis ng fan nang %d porsyento.";
+"intent_dialog_status" = "Umiikot ang mga fan sa %d RPM, at ang temperatura ay %@.";
+
+"popover_show_mode_symbols" = "Show mode symbols";
+
+/* Onboarding (first launch) */
+"onboarding_page3_title" = "Simulan ang iyong libreng trial";
+"onboarding_page3_subtitle" = "Ilagay ang iyong email para ma-unlock ang 7 araw na libreng trial. Hindi kailangan ng credit card.";
+"onboarding_continue" = "Magpatuloy";
+
+/* License window */
+"license_window_activated_title" = "Aktibo na ang lisensya ng Airway";
+"license_window_devices" = "Ang lisensyang ito ay kasalukuyang aktibo sa %d/%d na device";
+"license_window_email" = "Nakalisensya kay %@";
+"license_window_expires" = "May bisa hanggang %@";
+"license_window_beta" = "Beta na lisensya — hindi nag-e-expire";
+"popover_license" = "Lisensya";
+"popover_activate_license" = "I-activate ang Lisensya";
+"onboarding_fans_title" = "Pangunahing kontrol ng fan";
+"onboarding_fans_subtitle" = "Tatlong mode ang sumasaklaw sa lahat — mula sa tahimik na pag-browse hanggang sa thermal stress testing, na may live na readings sa buong oras.";
+"onboarding_presets_title" = "Mga Preset";
+"onboarding_presets_subtitle" = "I-save ang mga configuration na talagang ginagamit mo at magpalit sa pagitan ng mga ito sa dalawang click.";
+"onboarding_siri_title" = "Integrasyon sa Siri at Shortcuts";
+"onboarding_siri_subtitle" = "May kasamang App Intents ang Airway, kaya nagiging bahagi ng iyong automation workflows ang mga fan mo.";
+"onboarding_menubar_title" = "Native na menu-bar UI";
+"onboarding_menubar_subtitle" = "Malinis na popover na may bilis ng fan, pagpili ng mode, at temperatura — laging isang click lang.";
+"onboarding_back" = "Bumalik";
+"onboarding_helper_note" = "Gumagamit ang Airway ng maliit na system helper para kontrolin ang mga fan — maaaring humingi ng password ang macOS nang isang beses.";
+
+/* Appearance options */
+"popover_disable_liquid_glass" = "I-disable ang liquid glass";
+"popover_appearance" = "Hitsura";
+"appearance_light" = "Maliwanag";
+"appearance_system" = "Sistema";
+"appearance_dark" = "Madilim";
+
+/* Fan control diagnostics & thermal safety */
+"popover_fan_control_unsupported" = "Tinanggihan ng firmware ng Mac na ito ang manual na kontrol sa fan.";
+"popover_thermal_override" = "Umiinit — pinilit ang fans sa Maximum para sa kaligtasan. Babalik ang mode mo kapag lumamig na.";

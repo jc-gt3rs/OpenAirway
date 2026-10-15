@@ -1,0 +1,165 @@
+/* Main popover */
+"popover_add_preset" = "Add a preset…";
+"popover_options" = "Options";
+"popover_language" = "Language";
+"popover_send_feedback" = "Send Feedback…";
+"popover_check_for_updates" = "Check for Updates…";
+"popover_checking_for_updates" = "Checking for Updates…";
+"popover_up_to_date" = "Airway is Up to Date";
+"popover_update_available" = "Update %@ Available";
+"popover_downloading_update" = "Downloading Update…";
+"popover_downloading_update_progress" = "Downloading Update… %d%%";
+"popover_update_now" = "Update to %@ Now";
+"popover_installing_update" = "Installing Update…";
+"popover_update_failed" = "Update Check Failed — Retry";
+"popover_about" = "About";
+"popover_close" = "Close Airway";
+"popover_checking_license" = "Checking license…";
+"popover_no_fan_air" = "Silly, you have a MacBook Air :>";
+"popover_no_fan" = "No fan detected";
+"popover_mode_system" = "System Controlled";
+"popover_mode_manual" = "Manual Override";
+"popover_mode_max" = "Maximum Speed";
+"popover_connecting_helper" = "Connecting to helper...";
+"popover_repairing" = "Repairing...";
+"popover_repair_helper" = "Repair Helper";
+"popover_fan_index" = "Fan %d";
+"popover_auto" = "Auto";
+"popover_manual" = "Manual";
+"popover_max" = "Max";
+"popover_show_rpm" = "Show RPM in Menu Bar";
+"popover_show_temp" = "Show Temp in Menu Bar";
+"popover_show_icon" = "Show Icon in Menu Bar";
+"popover_launch_at_login" = "Launch at Login";
+"popover_use_fahrenheit" = "Use Fahrenheit";
+"popover_fine_tune" = "Fine Tune Manual Override";
+"popover_open_login_items" = "Open Login Items";
+"popover_enable_helper_desc" = "Enable the helper application to manage fan speeds.";
+"popover_enabling" = "Enabling...";
+"popover_enable" = "Enable";
+"popover_preset" = "Preset";
+"popover_selected" = "Selected";
+"popover_not_selected" = "Not selected";
+
+/* Language section */
+"language_system" = "System";
+
+/* Preset manager */
+"preset_sidebar_title" = "Presets";
+"preset_new" = "New Preset";
+"preset_add" = "Add";
+"preset_add_help" = "Add preset";
+"preset_delete" = "Delete";
+"preset_delete_help" = "Delete selected preset";
+"preset_save" = "Save";
+"preset_name_label" = "Name";
+"preset_name_placeholder" = "Preset name";
+"preset_icon_label" = "Icon";
+"preset_type_label" = "Type";
+"preset_value_label" = "Value";
+"preset_range_percentage" = "Allowed range: 25% to 100%.";
+"preset_range_rpm" = "Allowed range: %d to %d RPM.";
+"preset_nothing_to_show" = "Nothing to show";
+"preset_none_yet" = "No preset yet";
+"preset_percentage" = "Percentage";
+"preset_rpm" = "RPM";
+"preset_delete_context" = "Delete Preset";
+"preset_selected_a11y" = "Selected";
+
+/* Symbol picker */
+"symbol_category_airflow" = "Airflow";
+"symbol_category_devices" = "Devices";
+"symbol_category_people" = "People";
+"symbol_category_objects" = "Objects";
+"symbol_clear" = "Clear";
+"symbol_emoji" = "Emoji";
+
+/* License / paywall */
+"license_err_email_empty" = "Please enter your email address.";
+"license_err_email_too_long" = "Email address is too long.";
+"license_err_email_invalid" = "Please enter a valid email address.";
+"license_err_key_empty" = "Please enter your license key.";
+"license_err_key_too_short" = "License key is too short.";
+"license_err_key_too_long" = "License key is too long.";
+"license_err_key_invalid_chars" = "License key contains invalid characters.";
+"license_welcome" = "Welcome to Airway";
+"license_trial_prompt" = "Enter your email to start a free trial.";
+"license_email_placeholder" = "Email address";
+"license_start_trial" = "Start Free Trial";
+"license_day_remaining" = "1 day remaining";
+"license_days_remaining" = "%d days remaining";
+"license_activate" = "Activate";
+"license_trial_ending" = "Your trial is coming to an end";
+"license_trial_ended" = "Your trial has ended";
+"license_activate_prompt_ending" = "Activate your license now to keep using Airway.";
+"license_activate_prompt_ended" = "Airway costs $1+, enter your license key to continue.";
+"license_key_placeholder" = "License key";
+"license_activate_license" = "Activate License";
+"license_get_license" = "Get a license";
+"license_activated_success" = "License activated successfully!";
+"license_verification_required" = "License Verification Required";
+"license_reactivate" = "Re-activate License";
+"license_contact_support" = "Contact support";
+
+/* Feedback */
+"feedback_title" = "Send Feedback";
+"feedback_email_placeholder" = "Email (optional, so we can reply)";
+"feedback_disclaimer" = "Your app version, macOS version, and recent in-app logs are attached to help us reproduce the issue.";
+"feedback_sent_success" = "Thanks — feedback sent.";
+"feedback_sent_failure" = "Couldn't send. Check your connection and try again.";
+"feedback_send" = "Send";
+"feedback_placeholder_bug" = "What went wrong? What did you expect to happen?";
+"feedback_placeholder_idea" = "What would you like Airway to do?";
+"feedback_placeholder_other" = "Tell us anything.";
+
+/* About */
+"about_version" = "Version %@";
+"about_copyright" = "Copyright © 2026";
+"about_author" = "by John Cris Antor";
+
+/* Intent dialogs / errors */
+"intent_error_app_not_ready" = "Airway isn't ready yet. Please try again in a moment.";
+"intent_error_license_required" = "Airway needs an active license to control your fans. Open Airway to start a trial or enter your license.";
+"intent_error_helper_unreachable" = "Airway couldn't reach its fan-control helper. Open Airway once to finish setup, then try again.";
+"intent_error_preset_not_found" = "The preset \"%@\" no longer exists in Airway.";
+"intent_dialog_set_mode" = "Airway set to %@.";
+"intent_dialog_increase" = "Fan speed increased by %d percent.";
+"intent_dialog_decrease" = "Fan speed decreased by %d percent.";
+"intent_dialog_status" = "Fans are spinning at %d RPM, and the temperature is %@.";
+
+"popover_show_mode_symbols" = "Show mode symbols";
+
+/* Onboarding (first launch) */
+"onboarding_page3_title" = "Start your free trial";
+"onboarding_page3_subtitle" = "Enter your email to unlock a 7-day free trial. No credit card required.";
+"onboarding_continue" = "Continue";
+
+/* License window */
+"license_window_activated_title" = "Airway license is activated";
+"license_window_devices" = "This license is currently active in %d/%d devices";
+"license_window_email" = "Licensed to %@";
+"license_window_expires" = "Valid until %@";
+"license_window_beta" = "Beta license — never expires";
+"popover_license" = "License";
+"popover_activate_license" = "Activate License";
+"onboarding_fans_title" = "Take control of your Mac's fans";
+"onboarding_fans_subtitle" = "Three modes cover everything from silent browsing to thermal stress testing, with live readings the whole time.";
+"onboarding_presets_title" = "Save your presets";
+"onboarding_presets_subtitle" = "Save the configurations you actually use and switch between them in two clicks.";
+"onboarding_siri_title" = "Siri & Shortcuts integration";
+"onboarding_siri_subtitle" = "Airway ships App Intents, so your fans become part of your automation workflows.";
+"onboarding_menubar_title" = "Everything in your menu-bar";
+"onboarding_menubar_subtitle" = "A clean popover with fan speed, mode selector, and temperature, always one click away.";
+"onboarding_back" = "Back";
+"onboarding_helper_note" = "Airway uses a small system helper to control your fans — macOS may ask for your password once.";
+
+/* Appearance options */
+"popover_disable_liquid_glass" = "Disable liquid glass";
+"popover_appearance" = "Appearance";
+"appearance_light" = "Light";
+"appearance_system" = "System";
+"appearance_dark" = "Dark";
+
+/* Fan control diagnostics & thermal safety */
+"popover_fan_control_unsupported" = "This Mac's firmware refused manual fan control.";
+"popover_thermal_override" = "Running hot — fans forced to Maximum for safety. Your mode returns once it cools down.";

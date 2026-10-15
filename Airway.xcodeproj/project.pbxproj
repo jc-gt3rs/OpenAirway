@@ -1,0 +1,1001 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3904C85130417D6800D9C47A /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F200000057 /* Sparkle.framework */; };
+		392E9E7C2FF61729008F25C6 /* TelemetryReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E9E792FF61729008F25C6 /* TelemetryReporter.swift */; };
+		392E9E7F2FF61758008F25C6 /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E9E7D2FF61758008F25C6 /* FeedbackView.swift */; };
+		39688E4E2FE7A90A00F0C0CA /* iconairway.icon in Resources */ = {isa = PBXBuildFile; fileRef = 39688E4D2FE7A90A00F0C0CA /* iconairway.icon */; };
+		3981CB042FFBB9D800E99EA4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3981CB022FFBB9D800E99EA4 /* Localizable.strings */; };
+		3981CB052FFBBAB300E99EA4 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981CAF52FFBB81500E99EA4 /* AppLanguage.swift */; };
+		3981CB062FFBBAB300E99EA4 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981CAF62FFBB81500E99EA4 /* LocalizationManager.swift */; };
+		39A1E4CF302B86900046EFE1 /* airway768pProRes4444.mov in Resources */ = {isa = PBXBuildFile; fileRef = 39A1E4CE302B86900046EFE1 /* airway768pProRes4444.mov */; };
+		39A1E4D4302B8A990046EFE1 /* demo1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 39A1E4D0302B8A990046EFE1 /* demo1.mp4 */; };
+		39A1E4D5302B8A990046EFE1 /* demo4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 39A1E4D3302B8A990046EFE1 /* demo4.mp4 */; };
+		39A1E4D6302B8A990046EFE1 /* demo2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 39A1E4D1302B8A990046EFE1 /* demo2.mp4 */; };
+		39A1E4D7302B8A990046EFE1 /* demo3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 39A1E4D2302B8A990046EFE1 /* demo3.mp4 */; };
+		39E2E2A12FFC8ECB00A33E66 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E2E2A02FFC8ECB00A33E66 /* OnboardingView.swift */; };
+		39F311E42FE5816600176845 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F100000021 /* IOKit.framework */; };
+		39F311E52FE5817400176845 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F100000022 /* Security.framework */; };
+		A100000001 /* AirwayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000001 /* AirwayApp.swift */; };
+		A100000002 /* FanControlPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000002 /* FanControlPopoverView.swift */; };
+		A100000003 /* VisualEffectBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000003 /* VisualEffectBackground.swift */; };
+		A100000004 /* FanControlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000004 /* FanControlViewModel.swift */; };
+		A100000005 /* HelperClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000005 /* HelperClient.swift */; };
+		A100000006 /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000006 /* HelperProtocol.swift */; };
+		A100000007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F100000007 /* Assets.xcassets */; };
+		A100000008 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F100000020 /* ServiceManagement.framework */; };
+		A100000010 /* MachineID.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000030 /* MachineID.swift */; };
+		A100000011 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000031 /* KeychainStore.swift */; };
+		A100000012 /* TokenVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000032 /* TokenVerifier.swift */; };
+		A100000013 /* LicenseAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000033 /* LicenseAPIClient.swift */; };
+		A100000014 /* LicenseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000034 /* LicenseManager.swift */; };
+		A100000015 /* LicenseViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000035 /* LicenseViews.swift */; };
+		A100000016 /* Preset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000036 /* Preset.swift */; };
+		A100000017 /* PresetManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000037 /* PresetManagerView.swift */; };
+		A100000020 /* AirwayIntentError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000040 /* AirwayIntentError.swift */; };
+		A100000021 /* FanModeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000041 /* FanModeEntity.swift */; };
+		A100000022 /* SetFanModeIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000042 /* SetFanModeIntent.swift */; };
+		A100000023 /* GetFanStatusIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000043 /* GetFanStatusIntent.swift */; };
+		A100000024 /* AdjustFanSpeedIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000044 /* AdjustFanSpeedIntent.swift */; };
+		A100000025 /* AirwayShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000045 /* AirwayShortcuts.swift */; };
+		A100000099 /* LicenseWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000099 /* LicenseWindow.swift */; };
+		A1000000A1 /* ThermalSafetyPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000A1 /* ThermalSafetyPolicy.swift */; };
+		A1000000A2 /* AirwaySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000A2 /* AirwaySymbol.swift */; };
+		A200000050 /* OnboardingHeroPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200000050 /* OnboardingHeroPresentation.swift */; };
+		A200000051 /* LoopingVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200000051 /* LoopingVideoView.swift */; };
+		A200000052 /* PassiveVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200000052 /* PassiveVideoPlayerView.swift */; };
+		A200000053 /* OnboardingVideoGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200000053 /* OnboardingVideoGeometry.swift */; };
+		A200000054 /* PopoverOverflowState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200000054 /* PopoverOverflowState.swift */; };
+		A2000000C7 /* PopoverContentHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000000C7 /* PopoverContentHostingController.swift */; };
+		A200000055 /* PopoverDisclosureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200000055 /* PopoverDisclosureState.swift */; };
+		A200000056 /* AppUpdateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200000056 /* AppUpdateManager.swift */; };
+		A200000057 /* Sparkle.framework in Sources */ = {isa = PBXBuildFile; fileRef = F200000057 /* Sparkle.framework */; };
+		A200000058 /* Sparkle.framework in Embed Sparkle */ = {isa = PBXBuildFile; fileRef = F200000057 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B100000001 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000010 /* main.swift */; };
+		B100000002 /* HelperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000011 /* HelperService.swift */; };
+		B100000003 /* SMCWrapperObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = F100000012 /* SMCWrapperObjC.m */; };
+		B100000004 /* SMC.c in Sources */ = {isa = PBXBuildFile; fileRef = F100000013 /* SMC.c */; };
+		B100000005 /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000006 /* HelperProtocol.swift */; };
+		B1000000A1 /* ThermalSafetyPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000A1 /* ThermalSafetyPolicy.swift */; };
+		C100000001 /* com.airway.helper in Copy Helper */ = {isa = PBXBuildFile; fileRef = E200000002 /* com.airway.helper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C100000002 /* com.airway.helper.plist in Copy Launch Daemon Plist */ = {isa = PBXBuildFile; fileRef = F100000017 /* com.airway.helper.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		392E9E8B2FF61827008F25C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = P000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = T100000001;
+			remoteInfo = Airway;
+		};
+		PROXY000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = P000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = T100000002;
+			remoteInfo = com.airway.helper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		39F311DE2FE5785E00176845 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D100000001 /* Copy Helper */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				C100000001 /* com.airway.helper in Copy Helper */,
+			);
+			name = "Copy Helper";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D100000002 /* Copy Launch Daemon Plist */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchDaemons;
+			dstSubfolderSpec = 1;
+			files = (
+				C100000002 /* com.airway.helper.plist in Copy Launch Daemon Plist */,
+			);
+			name = "Copy Launch Daemon Plist";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D100000003 /* Embed Sparkle */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A200000058 /* Sparkle.framework in Embed Sparkle */,
+			);
+			name = "Embed Sparkle";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		392E9E792FF61729008F25C6 /* TelemetryReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelemetryReporter.swift; sourceTree = "<group>"; };
+		392E9E7D2FF61758008F25C6 /* FeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
+		392E9E872FF61827008F25C6 /* AirwayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirwayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39688E4D2FE7A90A00F0C0CA /* iconairway.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = iconairway.icon; sourceTree = "<group>"; };
+		3981CAF52FFBB81500E99EA4 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
+		3981CAF62FFBB81500E99EA4 /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
+		3981CAFA2FFBB9D800E99EA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3981CAFB2FFBB9D800E99EA4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3981CAFC2FFBB9D800E99EA4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3981CAFD2FFBB9D800E99EA4 /* fil */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fil; path = fil.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3981CAFE2FFBB9D800E99EA4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3981CAFF2FFBB9D800E99EA4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3981CB002FFBB9D800E99EA4 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3981CB012FFBB9D800E99EA4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		39A1E4CE302B86900046EFE1 /* airway768pProRes4444.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = airway768pProRes4444.mov; sourceTree = "<group>"; };
+		39A1E4D0302B8A990046EFE1 /* demo1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo1.mp4; sourceTree = "<group>"; };
+		39A1E4D1302B8A990046EFE1 /* demo2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo2.mp4; sourceTree = "<group>"; };
+		39A1E4D2302B8A990046EFE1 /* demo3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo3.mp4; sourceTree = "<group>"; };
+		39A1E4D3302B8A990046EFE1 /* demo4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo4.mp4; sourceTree = "<group>"; };
+		39E2E2A02FFC8ECB00A33E66 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		E200000001 /* Airway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airway.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E200000002 /* com.airway.helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.airway.helper; sourceTree = BUILT_PRODUCTS_DIR; };
+		F100000001 /* AirwayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirwayApp.swift; sourceTree = "<group>"; };
+		F100000002 /* FanControlPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanControlPopoverView.swift; sourceTree = "<group>"; };
+		F100000003 /* VisualEffectBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBackground.swift; sourceTree = "<group>"; };
+		F100000004 /* FanControlViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanControlViewModel.swift; sourceTree = "<group>"; };
+		F100000005 /* HelperClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperClient.swift; sourceTree = "<group>"; };
+		F100000006 /* HelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperProtocol.swift; sourceTree = "<group>"; };
+		F100000007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F100000009 /* Airway.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Airway.entitlements; sourceTree = "<group>"; };
+		F100000010 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F100000011 /* HelperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperService.swift; sourceTree = "<group>"; };
+		F100000012 /* SMCWrapperObjC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMCWrapperObjC.m; sourceTree = "<group>"; };
+		F100000013 /* SMC.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SMC.c; sourceTree = "<group>"; };
+		F100000014 /* SMC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMC.h; sourceTree = "<group>"; };
+		F100000015 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		F100000017 /* com.airway.helper.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = com.airway.helper.plist; sourceTree = "<group>"; };
+		F100000020 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		F100000021 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		F100000022 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F100000030 /* MachineID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineID.swift; sourceTree = "<group>"; };
+		F100000031 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		F100000032 /* TokenVerifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenVerifier.swift; sourceTree = "<group>"; };
+		F100000033 /* LicenseAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseAPIClient.swift; sourceTree = "<group>"; };
+		F100000034 /* LicenseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseManager.swift; sourceTree = "<group>"; };
+		F100000035 /* LicenseViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseViews.swift; sourceTree = "<group>"; };
+		F100000036 /* Preset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preset.swift; sourceTree = "<group>"; };
+		F100000037 /* PresetManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetManagerView.swift; sourceTree = "<group>"; };
+		F100000040 /* AirwayIntentError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirwayIntentError.swift; sourceTree = "<group>"; };
+		F100000041 /* FanModeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanModeEntity.swift; sourceTree = "<group>"; };
+		F100000042 /* SetFanModeIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetFanModeIntent.swift; sourceTree = "<group>"; };
+		F100000043 /* GetFanStatusIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFanStatusIntent.swift; sourceTree = "<group>"; };
+		F100000044 /* AdjustFanSpeedIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustFanSpeedIntent.swift; sourceTree = "<group>"; };
+		F100000045 /* AirwayShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirwayShortcuts.swift; sourceTree = "<group>"; };
+		F100000099 /* LicenseWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseWindow.swift; sourceTree = "<group>"; };
+		F1000000A1 /* ThermalSafetyPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermalSafetyPolicy.swift; sourceTree = "<group>"; };
+		F1000000A2 /* AirwaySymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirwaySymbol.swift; sourceTree = "<group>"; };
+		F200000050 /* OnboardingHeroPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingHeroPresentation.swift; sourceTree = "<group>"; };
+		F200000051 /* LoopingVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingVideoView.swift; sourceTree = "<group>"; };
+		F200000052 /* PassiveVideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassiveVideoPlayerView.swift; sourceTree = "<group>"; };
+		F200000053 /* OnboardingVideoGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVideoGeometry.swift; sourceTree = "<group>"; };
+		F200000054 /* PopoverOverflowState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverOverflowState.swift; sourceTree = "<group>"; };
+		F2000000C7 /* PopoverContentHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverContentHostingController.swift; sourceTree = "<group>"; };
+		F200000055 /* PopoverDisclosureState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverDisclosureState.swift; sourceTree = "<group>"; };
+		F200000056 /* AppUpdateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdateManager.swift; sourceTree = "<group>"; };
+		F200000057 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		392E9E882FF61827008F25C6 /* AirwayTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = AirwayTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		392E9E842FF61827008F25C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E300000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3904C85130417D6800D9C47A /* Sparkle.framework in Frameworks */,
+				A100000008 /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E300000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39F311E52FE5817400176845 /* Security.framework in Frameworks */,
+				39F311E42FE5816600176845 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		392E9E7A2FF61729008F25C6 /* Telemetry */ = {
+			isa = PBXGroup;
+			children = (
+				392E9E792FF61729008F25C6 /* TelemetryReporter.swift */,
+			);
+			path = Telemetry;
+			sourceTree = "<group>";
+		};
+		3974EBE530206118002890F9 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				39A1E4CE302B86900046EFE1 /* airway768pProRes4444.mov */,
+				39A1E4D0302B8A990046EFE1 /* demo1.mp4 */,
+				39A1E4D1302B8A990046EFE1 /* demo2.mp4 */,
+				39A1E4D2302B8A990046EFE1 /* demo3.mp4 */,
+				39A1E4D3302B8A990046EFE1 /* demo4.mp4 */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		3981CAF72FFBB81500E99EA4 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				3981CAF52FFBB81500E99EA4 /* AppLanguage.swift */,
+				3981CAF62FFBB81500E99EA4 /* LocalizationManager.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		3981CB032FFBB9D800E99EA4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3981CB022FFBB9D800E99EA4 /* Localizable.strings */,
+				3974EBE530206118002890F9 /* Onboarding */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		G000000000 = {
+			isa = PBXGroup;
+			children = (
+				G100000000 /* Airway.app */,
+				G200000000 /* com.airway.helper */,
+				392E9E882FF61827008F25C6 /* AirwayTests */,
+				G300000000 /* Frameworks */,
+				G400000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		G100000000 /* Airway.app */ = {
+			isa = PBXGroup;
+			children = (
+				F100000001 /* AirwayApp.swift */,
+				F100000007 /* Assets.xcassets */,
+				F100000009 /* Airway.entitlements */,
+				G110000000 /* Views */,
+				G120000000 /* ViewModels */,
+				G130000000 /* Helper */,
+				G140000000 /* Shared */,
+				G150000000 /* License */,
+				G160000000 /* Intents */,
+				G170000000 /* Updates */,
+				G180000000 /* Frameworks */,
+				39688E4D2FE7A90A00F0C0CA /* iconairway.icon */,
+				392E9E7A2FF61729008F25C6 /* Telemetry */,
+				3981CAF72FFBB81500E99EA4 /* Localization */,
+				3981CB032FFBB9D800E99EA4 /* Resources */,
+			);
+			path = Airway.app;
+			sourceTree = "<group>";
+		};
+		G110000000 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				392E9E7D2FF61758008F25C6 /* FeedbackView.swift */,
+				F200000051 /* LoopingVideoView.swift */,
+				F200000052 /* PassiveVideoPlayerView.swift */,
+				F200000050 /* OnboardingHeroPresentation.swift */,
+				F200000053 /* OnboardingVideoGeometry.swift */,
+				F100000099 /* LicenseWindow.swift */,
+				F100000002 /* FanControlPopoverView.swift */,
+				F200000054 /* PopoverOverflowState.swift */,
+				F2000000C7 /* PopoverContentHostingController.swift */,
+				F200000055 /* PopoverDisclosureState.swift */,
+				F100000003 /* VisualEffectBackground.swift */,
+				F100000035 /* LicenseViews.swift */,
+				F100000037 /* PresetManagerView.swift */,
+				39E2E2A02FFC8ECB00A33E66 /* OnboardingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		G120000000 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F100000004 /* FanControlViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		G130000000 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F100000005 /* HelperClient.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		G140000000 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F100000006 /* HelperProtocol.swift */,
+				F1000000A1 /* ThermalSafetyPolicy.swift */,
+				F1000000A2 /* AirwaySymbol.swift */,
+				F100000036 /* Preset.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		G150000000 /* License */ = {
+			isa = PBXGroup;
+			children = (
+				F100000030 /* MachineID.swift */,
+				F100000031 /* KeychainStore.swift */,
+				F100000032 /* TokenVerifier.swift */,
+				F100000033 /* LicenseAPIClient.swift */,
+				F100000034 /* LicenseManager.swift */,
+			);
+			path = License;
+			sourceTree = "<group>";
+		};
+		G160000000 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				F100000040 /* AirwayIntentError.swift */,
+				F100000041 /* FanModeEntity.swift */,
+				F100000042 /* SetFanModeIntent.swift */,
+				F100000043 /* GetFanStatusIntent.swift */,
+				F100000044 /* AdjustFanSpeedIntent.swift */,
+				F100000045 /* AirwayShortcuts.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		G170000000 /* Updates */ = {
+			isa = PBXGroup;
+			children = (
+				F200000056 /* AppUpdateManager.swift */,
+			);
+			path = Updates;
+			sourceTree = "<group>";
+		};
+		G180000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F200000057 /* Sparkle.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		G200000000 /* com.airway.helper */ = {
+			isa = PBXGroup;
+			children = (
+				F100000010 /* main.swift */,
+				F100000011 /* HelperService.swift */,
+				F100000017 /* com.airway.helper.plist */,
+				G210000000 /* SMCClient */,
+			);
+			path = com.airway.helper;
+			sourceTree = "<group>";
+		};
+		G210000000 /* SMCClient */ = {
+			isa = PBXGroup;
+			children = (
+				F100000012 /* SMCWrapperObjC.m */,
+				F100000013 /* SMC.c */,
+				F100000014 /* SMC.h */,
+				F100000015 /* module.modulemap */,
+			);
+			path = SMCClient;
+			sourceTree = "<group>";
+		};
+		G300000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F100000020 /* ServiceManagement.framework */,
+				F100000021 /* IOKit.framework */,
+				F100000022 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		G400000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E200000001 /* Airway.app */,
+				E200000002 /* com.airway.helper */,
+				392E9E872FF61827008F25C6 /* AirwayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		392E9E862FF61827008F25C6 /* AirwayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 392E9E8D2FF61827008F25C6 /* Build configuration list for PBXNativeTarget "AirwayTests" */;
+			buildPhases = (
+				392E9E832FF61827008F25C6 /* Sources */,
+				392E9E842FF61827008F25C6 /* Frameworks */,
+				392E9E852FF61827008F25C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				392E9E8C2FF61827008F25C6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				392E9E882FF61827008F25C6 /* AirwayTests */,
+			);
+			name = AirwayTests;
+			packageProductDependencies = (
+			);
+			productName = AirwayTests;
+			productReference = 392E9E872FF61827008F25C6 /* AirwayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		T100000001 /* Airway */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = X100000001 /* Build configuration list for PBXNativeTarget "Airway" */;
+			buildPhases = (
+				E500000001 /* Sources */,
+				E300000001 /* Frameworks */,
+				D100000003 /* Embed Sparkle */,
+				E600000001 /* Resources */,
+				D100000001 /* Copy Helper */,
+				D100000002 /* Copy Launch Daemon Plist */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEP0000001 /* PBXTargetDependency */,
+			);
+			name = Airway;
+			productName = Airway;
+			productReference = E200000001 /* Airway.app */;
+			productType = "com.apple.product-type.application";
+		};
+		T100000002 /* com.airway.helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = X100000002 /* Build configuration list for PBXNativeTarget "com.airway.helper" */;
+			buildPhases = (
+				E500000002 /* Sources */,
+				E300000002 /* Frameworks */,
+				39F311DE2FE5785E00176845 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com.airway.helper;
+			productName = com.airway.helper;
+			productReference = E200000002 /* com.airway.helper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		P000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					392E9E862FF61827008F25C6 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = T100000001;
+					};
+				};
+			};
+			buildConfigurationList = X000000001 /* Build configuration list for PBXProject "Airway" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				"zh-Hans",
+				ja,
+				es,
+				ko,
+				fil,
+				fr,
+			);
+			mainGroup = G000000000;
+			productRefGroup = G400000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				T100000001 /* Airway */,
+				T100000002 /* com.airway.helper */,
+				392E9E862FF61827008F25C6 /* AirwayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		392E9E852FF61827008F25C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E600000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A1E4CF302B86900046EFE1 /* airway768pProRes4444.mov in Resources */,
+				39688E4E2FE7A90A00F0C0CA /* iconairway.icon in Resources */,
+				39A1E4D4302B8A990046EFE1 /* demo1.mp4 in Resources */,
+				39A1E4D5302B8A990046EFE1 /* demo4.mp4 in Resources */,
+				39A1E4D6302B8A990046EFE1 /* demo2.mp4 in Resources */,
+				39A1E4D7302B8A990046EFE1 /* demo3.mp4 in Resources */,
+				3981CB042FFBB9D800E99EA4 /* Localizable.strings in Resources */,
+				A100000007 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		392E9E832FF61827008F25C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E500000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				392E9E7F2FF61758008F25C6 /* FeedbackView.swift in Sources */,
+				A200000051 /* LoopingVideoView.swift in Sources */,
+				A200000052 /* PassiveVideoPlayerView.swift in Sources */,
+				A200000050 /* OnboardingHeroPresentation.swift in Sources */,
+				A200000053 /* OnboardingVideoGeometry.swift in Sources */,
+				A100000099 /* LicenseWindow.swift in Sources */,
+				392E9E7C2FF61729008F25C6 /* TelemetryReporter.swift in Sources */,
+				A100000001 /* AirwayApp.swift in Sources */,
+				A100000002 /* FanControlPopoverView.swift in Sources */,
+				A200000054 /* PopoverOverflowState.swift in Sources */,
+				A2000000C7 /* PopoverContentHostingController.swift in Sources */,
+				A200000057 /* Sparkle.framework in Sources */,
+				A200000055 /* PopoverDisclosureState.swift in Sources */,
+				A200000056 /* AppUpdateManager.swift in Sources */,
+				A100000003 /* VisualEffectBackground.swift in Sources */,
+				A100000004 /* FanControlViewModel.swift in Sources */,
+				A100000005 /* HelperClient.swift in Sources */,
+				A100000006 /* HelperProtocol.swift in Sources */,
+				A1000000A1 /* ThermalSafetyPolicy.swift in Sources */,
+				A1000000A2 /* AirwaySymbol.swift in Sources */,
+				A100000010 /* MachineID.swift in Sources */,
+				A100000011 /* KeychainStore.swift in Sources */,
+				39E2E2A12FFC8ECB00A33E66 /* OnboardingView.swift in Sources */,
+				3981CB052FFBBAB300E99EA4 /* AppLanguage.swift in Sources */,
+				3981CB062FFBBAB300E99EA4 /* LocalizationManager.swift in Sources */,
+				A100000012 /* TokenVerifier.swift in Sources */,
+				A100000013 /* LicenseAPIClient.swift in Sources */,
+				A100000014 /* LicenseManager.swift in Sources */,
+				A100000015 /* LicenseViews.swift in Sources */,
+				A100000016 /* Preset.swift in Sources */,
+				A100000017 /* PresetManagerView.swift in Sources */,
+				A100000020 /* AirwayIntentError.swift in Sources */,
+				A100000021 /* FanModeEntity.swift in Sources */,
+				A100000022 /* SetFanModeIntent.swift in Sources */,
+				A100000023 /* GetFanStatusIntent.swift in Sources */,
+				A100000024 /* AdjustFanSpeedIntent.swift in Sources */,
+				A100000025 /* AirwayShortcuts.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E500000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B100000001 /* main.swift in Sources */,
+				B100000002 /* HelperService.swift in Sources */,
+				B100000003 /* SMCWrapperObjC.m in Sources */,
+				B100000004 /* SMC.c in Sources */,
+				B100000005 /* HelperProtocol.swift in Sources */,
+				B1000000A1 /* ThermalSafetyPolicy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		392E9E8C2FF61827008F25C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = T100000001 /* Airway */;
+			targetProxy = 392E9E8B2FF61827008F25C6 /* PBXContainerItemProxy */;
+		};
+		DEP0000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = T100000002 /* com.airway.helper */;
+			targetProxy = PROXY000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3981CB022FFBB9D800E99EA4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3981CAFA2FFBB9D800E99EA4 /* en */,
+				3981CAFB2FFBB9D800E99EA4 /* de */,
+				3981CAFC2FFBB9D800E99EA4 /* es */,
+				3981CAFD2FFBB9D800E99EA4 /* fil */,
+				3981CAFE2FFBB9D800E99EA4 /* fr */,
+				3981CAFF2FFBB9D800E99EA4 /* ja */,
+				3981CB002FFBB9D800E99EA4 /* ko */,
+				3981CB012FFBB9D800E99EA4 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		392E9E8E2FF61827008F25C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = N392C48YLY;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Airway.app/Frameworks";
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = wedidthat.AirwayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airway.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Airway";
+			};
+			name = Debug;
+		};
+		392E9E8F2FF61827008F25C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = N392C48YLY;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Airway.app/Frameworks";
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = wedidthat.AirwayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airway.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Airway";
+			};
+			name = Release;
+		};
+		XC00000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 5;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = N392C48YLY;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.8.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = Airway;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = v;
+			};
+			name = Debug;
+		};
+		XC00000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 5;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = N392C48YLY;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = Airway;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = v;
+			};
+			name = Release;
+		};
+		XC10000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = iconairway;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Airway.app/Airway.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				CURRENT_PROJECT_VERSION = 5;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = N392C48YLY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Airway.app/Frameworks";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Airway.app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Airway;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airway.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		XC10000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = iconairway;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Airway.app/Airway.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				CURRENT_PROJECT_VERSION = 5;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = N392C48YLY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Airway.app/Frameworks";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Airway.app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Airway;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airway.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		XC20000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				CURRENT_PROJECT_VERSION = 5;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = N392C48YLY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/com.airway.helper/SMCClient";
+				INFOPLIST_FILE = com.airway.helper/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airway.helper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/com.airway.helper/SMCClient";
+			};
+			name = Debug;
+		};
+		XC20000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				CURRENT_PROJECT_VERSION = 5;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/com.airway.helper/SMCClient";
+				INFOPLIST_FILE = com.airway.helper/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airway.helper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/com.airway.helper/SMCClient";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		392E9E8D2FF61827008F25C6 /* Build configuration list for PBXNativeTarget "AirwayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				392E9E8E2FF61827008F25C6 /* Debug */,
+				392E9E8F2FF61827008F25C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		X000000001 /* Build configuration list for PBXProject "Airway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				XC00000001 /* Debug */,
+				XC00000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		X100000001 /* Build configuration list for PBXNativeTarget "Airway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				XC10000001 /* Debug */,
+				XC10000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		X100000002 /* Build configuration list for PBXNativeTarget "com.airway.helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				XC20000001 /* Debug */,
+				XC20000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = P000000001 /* Project object */;
+}

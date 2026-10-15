@@ -1,0 +1,165 @@
+/* Main popover */
+"popover_add_preset" = "添加预设…";
+"popover_options" = "选项";
+"popover_language" = "语言";
+"popover_send_feedback" = "发送反馈…";
+"popover_check_for_updates" = "检查更新…";
+"popover_checking_for_updates" = "正在检查更新…";
+"popover_up_to_date" = "Airway 已是最新版本";
+"popover_update_available" = "更新 %@ 可用";
+"popover_downloading_update" = "正在下载更新…";
+"popover_downloading_update_progress" = "正在下载更新… %d%%";
+"popover_update_now" = "立即更新到 %@";
+"popover_installing_update" = "正在安装更新…";
+"popover_update_failed" = "检查更新失败 — 重试";
+"popover_about" = "关于";
+"popover_close" = "关闭 Airway";
+"popover_checking_license" = "正在检查许可证…";
+"popover_no_fan_air" = "呵呵，你用的是 MacBook Air :>";
+"popover_no_fan" = "未检测到风扇";
+"popover_mode_system" = "系统控制";
+"popover_mode_manual" = "手动覆盖";
+"popover_mode_max" = "最高速度";
+"popover_connecting_helper" = "正在连接助手…";
+"popover_repairing" = "正在修复…";
+"popover_repair_helper" = "修复助手";
+"popover_fan_index" = "风扇 %d";
+"popover_auto" = "自动";
+"popover_manual" = "手动";
+"popover_max" = "最大";
+"popover_show_rpm" = "在菜单栏显示转速";
+"popover_show_temp" = "在菜单栏显示温度";
+"popover_show_icon" = "在菜单栏显示图标";
+"popover_launch_at_login" = "登录时启动";
+"popover_use_fahrenheit" = "使用华氏度";
+"popover_fine_tune" = "精细调节手动覆盖";
+"popover_open_login_items" = "打开登录项";
+"popover_enable_helper_desc" = "启用助手应用以管理风扇转速。";
+"popover_enabling" = "正在启用…";
+"popover_enable" = "启用";
+"popover_preset" = "预设";
+"popover_selected" = "已选择";
+"popover_not_selected" = "未选择";
+
+/* Language section */
+"language_system" = "系统";
+
+/* Preset manager */
+"preset_sidebar_title" = "预设";
+"preset_new" = "新建预设";
+"preset_add" = "添加";
+"preset_add_help" = "添加预设";
+"preset_delete" = "删除";
+"preset_delete_help" = "删除所选预设";
+"preset_save" = "保存";
+"preset_name_label" = "名称";
+"preset_name_placeholder" = "预设名称";
+"preset_icon_label" = "图标";
+"preset_type_label" = "类型";
+"preset_value_label" = "数值";
+"preset_range_percentage" = "允许范围：25% 至 100%。";
+"preset_range_rpm" = "允许范围：%d 至 %d RPM。";
+"preset_nothing_to_show" = "无内容可显示";
+"preset_none_yet" = "尚无预设";
+"preset_percentage" = "百分比";
+"preset_rpm" = "RPM";
+"preset_delete_context" = "删除预设";
+"preset_selected_a11y" = "已选择";
+
+/* Symbol picker */
+"symbol_category_airflow" = "气流";
+"symbol_category_devices" = "设备";
+"symbol_category_people" = "人物";
+"symbol_category_objects" = "物品";
+"symbol_clear" = "清除";
+"symbol_emoji" = "表情符号";
+
+/* License / paywall */
+"license_err_email_empty" = "请输入您的电子邮件地址。";
+"license_err_email_too_long" = "电子邮件地址过长。";
+"license_err_email_invalid" = "请输入有效的电子邮件地址。";
+"license_err_key_empty" = "请输入您的许可证密钥。";
+"license_err_key_too_short" = "许可证密钥过短。";
+"license_err_key_too_long" = "许可证密钥过长。";
+"license_err_key_invalid_chars" = "许可证密钥包含无效字符。";
+"license_welcome" = "欢迎使用 Airway";
+"license_trial_prompt" = "输入您的电子邮件以开始免费试用。";
+"license_email_placeholder" = "电子邮件地址";
+"license_start_trial" = "开始免费试用";
+"license_day_remaining" = "剩余 1 天";
+"license_days_remaining" = "剩余 %d 天";
+"license_activate" = "激活";
+"license_trial_ending" = "您的试用即将结束";
+"license_trial_ended" = "您的试用已结束";
+"license_activate_prompt_ending" = "立即激活您的许可证以继续使用 Airway。";
+"license_activate_prompt_ended" = "Airway 售价 1 美元起，输入许可证密钥以继续。";
+"license_key_placeholder" = "许可证密钥";
+"license_activate_license" = "激活许可证";
+"license_get_license" = "获取许可证";
+"license_activated_success" = "许可证已成功激活！";
+"license_verification_required" = "需要验证许可证";
+"license_reactivate" = "重新激活许可证";
+"license_contact_support" = "联系支持";
+
+/* Feedback */
+"feedback_title" = "发送反馈";
+"feedback_email_placeholder" = "电子邮件（可选，便于我们回复）";
+"feedback_disclaimer" = "系统会附上您的应用版本、macOS 版本和近期应用内日志，以帮助我们重现问题。";
+"feedback_sent_success" = "谢谢，反馈已发送。";
+"feedback_sent_failure" = "发送失败。请检查您的网络连接后重试。";
+"feedback_send" = "发送";
+"feedback_placeholder_bug" = "出了什么问题？您原本期望发生什么？";
+"feedback_placeholder_idea" = "您希望 Airway 具备什么功能？";
+"feedback_placeholder_other" = "欢迎告诉我们任何想法。";
+
+/* About */
+"about_version" = "版本 %@";
+"about_copyright" = "Copyright © 2026";
+"about_author" = "作者：John Cris Antor";
+
+/* Intent dialogs / errors */
+"intent_error_app_not_ready" = "Airway 尚未准备好，请稍后再试。";
+"intent_error_license_required" = "Airway 需要有效的许可证才能控制风扇。请打开 Airway 开始试用或输入您的许可证。";
+"intent_error_helper_unreachable" = "Airway 无法连接到风扇控制助手。请先打开 Airway 完成设置，然后再试一次。";
+"intent_error_preset_not_found" = "预设“%@”在 Airway 中已不存在。";
+"intent_dialog_set_mode" = "Airway 已设置为 %@。";
+"intent_dialog_increase" = "风扇转速已提高 %d%%。";
+"intent_dialog_decrease" = "风扇转速已降低 %d%%。";
+"intent_dialog_status" = "风扇转速为 %d RPM，温度为 %@。";
+
+"popover_show_mode_symbols" = "Show mode symbols";
+
+/* Onboarding (first launch) */
+"onboarding_page3_title" = "开始免费试用";
+"onboarding_page3_subtitle" = "输入邮箱即可解锁 7 天免费试用，无需信用卡。";
+"onboarding_continue" = "继续";
+
+/* License window */
+"license_window_activated_title" = "Airway 许可证已激活";
+"license_window_devices" = "此许可证目前已在 %d/%d 台设备上激活";
+"license_window_email" = "授权给 %@";
+"license_window_expires" = "有效期至 %@";
+"license_window_beta" = "测试版许可证 — 永不过期";
+"popover_license" = "许可证";
+"popover_activate_license" = "激活许可证";
+"onboarding_fans_title" = "核心风扇控制";
+"onboarding_fans_subtitle" = "三种模式覆盖从安静浏览到散热压力测试的所有场景，并全程提供实时读数。";
+"onboarding_presets_title" = "预设";
+"onboarding_presets_subtitle" = "保存你真正常用的配置，两次点击即可切换。";
+"onboarding_siri_title" = "Siri 与快捷指令集成";
+"onboarding_siri_subtitle" = "Airway 内置 App Intents，让风扇成为你自动化工作流的一部分。";
+"onboarding_menubar_title" = "原生菜单栏界面";
+"onboarding_menubar_subtitle" = "简洁的弹出窗口包含风扇转速、模式选择和温度，始终一键可达。";
+"onboarding_back" = "返回";
+"onboarding_helper_note" = "Airway 使用一个小型系统助手来控制风扇 — macOS 可能会要求你输入一次密码。";
+
+/* Appearance options */
+"popover_disable_liquid_glass" = "停用液态玻璃";
+"popover_appearance" = "外观";
+"appearance_light" = "浅色";
+"appearance_system" = "系统";
+"appearance_dark" = "深色";
+
+/* Fan control diagnostics & thermal safety */
+"popover_fan_control_unsupported" = "这台 Mac 的固件拒绝了风扇手动控制。";
+"popover_thermal_override" = "温度过高——已出于安全将风扇调至最大。降温后会恢复你的模式。";

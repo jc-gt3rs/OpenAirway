@@ -1,0 +1,165 @@
+/* Main popover */
+"popover_add_preset" = "プリセットを追加…";
+"popover_options" = "オプション";
+"popover_language" = "言語";
+"popover_send_feedback" = "フィードバックを送信…";
+"popover_check_for_updates" = "アップデートを確認…";
+"popover_checking_for_updates" = "アップデートを確認中…";
+"popover_up_to_date" = "Airwayは最新です";
+"popover_update_available" = "アップデート%@が利用可能";
+"popover_downloading_update" = "アップデートをダウンロード中…";
+"popover_downloading_update_progress" = "アップデートをダウンロード中… %d%%";
+"popover_update_now" = "今すぐ%@にアップデート";
+"popover_installing_update" = "アップデートをインストール中…";
+"popover_update_failed" = "アップデートの確認に失敗 — 再試行";
+"popover_about" = "このアプリについて";
+"popover_close" = "Airwayを終了";
+"popover_checking_license" = "ライセンスを確認中…";
+"popover_no_fan_air" = "おっと、MacBook Airをお使いですね :>";
+"popover_no_fan" = "ファンが検出されません";
+"popover_mode_system" = "システム制御";
+"popover_mode_manual" = "手動オーバーライド";
+"popover_mode_max" = "最大速度";
+"popover_connecting_helper" = "ヘルパーに接続中...";
+"popover_repairing" = "修復中...";
+"popover_repair_helper" = "ヘルパーを修復";
+"popover_fan_index" = "ファン%d";
+"popover_auto" = "オート";
+"popover_manual" = "手動";
+"popover_max" = "最大";
+"popover_show_rpm" = "メニューバーにRPMを表示";
+"popover_show_temp" = "メニューバーに温度を表示";
+"popover_show_icon" = "メニューバーにアイコンを表示";
+"popover_launch_at_login" = "ログイン時に起動";
+"popover_use_fahrenheit" = "華氏を使用";
+"popover_fine_tune" = "手動オーバーライドを微調整";
+"popover_open_login_items" = "ログイン項目を開く";
+"popover_enable_helper_desc" = "ファン速度を管理するにはヘルパーアプリケーションを有効にしてください。";
+"popover_enabling" = "有効化中...";
+"popover_enable" = "有効にする";
+"popover_preset" = "プリセット";
+"popover_selected" = "選択済み";
+"popover_not_selected" = "未選択";
+
+/* Language section */
+"language_system" = "システム";
+
+/* Preset manager */
+"preset_sidebar_title" = "プリセット";
+"preset_new" = "新規プリセット";
+"preset_add" = "追加";
+"preset_add_help" = "プリセットを追加";
+"preset_delete" = "削除";
+"preset_delete_help" = "選択したプリセットを削除";
+"preset_save" = "保存";
+"preset_name_label" = "名前";
+"preset_name_placeholder" = "プリセット名";
+"preset_icon_label" = "アイコン";
+"preset_type_label" = "種類";
+"preset_value_label" = "値";
+"preset_range_percentage" = "許容範囲：25%〜100%。";
+"preset_range_rpm" = "許容範囲：%d〜%d RPM。";
+"preset_nothing_to_show" = "表示するものがありません";
+"preset_none_yet" = "プリセットはまだありません";
+"preset_percentage" = "パーセント";
+"preset_rpm" = "RPM";
+"preset_delete_context" = "プリセットを削除";
+"preset_selected_a11y" = "選択済み";
+
+/* Symbol picker */
+"symbol_category_airflow" = "気流";
+"symbol_category_devices" = "デバイス";
+"symbol_category_people" = "人物";
+"symbol_category_objects" = "オブジェクト";
+"symbol_clear" = "クリア";
+"symbol_emoji" = "絵文字";
+
+/* License / paywall */
+"license_err_email_empty" = "メールアドレスを入力してください。";
+"license_err_email_too_long" = "メールアドレスが長すぎます。";
+"license_err_email_invalid" = "有効なメールアドレスを入力してください。";
+"license_err_key_empty" = "ライセンスキーを入力してください。";
+"license_err_key_too_short" = "ライセンスキーが短すぎます。";
+"license_err_key_too_long" = "ライセンスキーが長すぎます。";
+"license_err_key_invalid_chars" = "ライセンスキーに無効な文字が含まれています。";
+"license_welcome" = "Airwayへようこそ";
+"license_trial_prompt" = "メールアドレスを入力して無料トライアルを開始してください。";
+"license_email_placeholder" = "メールアドレス";
+"license_start_trial" = "無料トライアルを開始";
+"license_day_remaining" = "残り1日";
+"license_days_remaining" = "残り%d日";
+"license_activate" = "有効化";
+"license_trial_ending" = "トライアルはまもなく終了します";
+"license_trial_ended" = "トライアルは終了しました";
+"license_activate_prompt_ending" = "Airwayを引き続き使用するには、今すぐライセンスを有効化してください。";
+"license_activate_prompt_ended" = "Airwayは1ドル以上です。続行するにはライセンスキーを入力してください。";
+"license_key_placeholder" = "ライセンスキー";
+"license_activate_license" = "ライセンスを有効化";
+"license_get_license" = "ライセンスを取得";
+"license_activated_success" = "ライセンスが有効化されました！";
+"license_verification_required" = "ライセンスの確認が必要です";
+"license_reactivate" = "ライセンスを再有効化";
+"license_contact_support" = "サポートに問い合わせる";
+
+/* Feedback */
+"feedback_title" = "フィードバックを送信";
+"feedback_email_placeholder" = "メール（任意、返信用）";
+"feedback_disclaimer" = "問題の再現に役立てるため、アプリのバージョン、macOSのバージョン、最近のアプリ内ログが添付されます。";
+"feedback_sent_success" = "ありがとうございます。フィードバックを送信しました。";
+"feedback_sent_failure" = "送信できませんでした。接続を確認してもう一度お試しください。";
+"feedback_send" = "送信";
+"feedback_placeholder_bug" = "何が問題でしたか？ 何が起こると予想していましたか？";
+"feedback_placeholder_idea" = "Airwayにどのような機能を追加してほしいですか？";
+"feedback_placeholder_other" = "何でもお聞かせください。";
+
+/* About */
+"about_version" = "バージョン %@";
+"about_copyright" = "Copyright © 2026";
+"about_author" = "作成者：John Cris Antor";
+
+/* Intent dialogs / errors */
+"intent_error_app_not_ready" = "Airwayはまだ準備ができていません。しばらくしてからもう一度お試しください。";
+"intent_error_license_required" = "ファンを制御するには有効なライセンスが必要です。Airwayを開いてトライアルを開始するか、ライセンスを入力してください。";
+"intent_error_helper_unreachable" = "ファン制御ヘルパーに接続できませんでした。Airwayを一度開いてセットアップを完了してから、もう一度お試しください。";
+"intent_error_preset_not_found" = "プリセット「%@」はAirwayに存在しません。";
+"intent_dialog_set_mode" = "Airwayを%@に設定しました。";
+"intent_dialog_increase" = "ファン速度が%dパーセント上昇しました。";
+"intent_dialog_decrease" = "ファン速度が%dパーセント低下しました。";
+"intent_dialog_status" = "ファンは%d RPMで回転しており、温度は%@です。";
+
+"popover_show_mode_symbols" = "Show mode symbols";
+
+/* Onboarding (first launch) */
+"onboarding_page3_title" = "無料トライアルを開始";
+"onboarding_page3_subtitle" = "メールアドレスを入力すると7日間の無料トライアルが始まります。クレジットカードは不要です。";
+"onboarding_continue" = "続ける";
+
+/* License window */
+"license_window_activated_title" = "Airwayライセンスは有効です";
+"license_window_devices" = "このライセンスは現在 %d/%d 台のデバイスで有効です";
+"license_window_email" = "ライセンス所有者: %@";
+"license_window_expires" = "有効期限: %@";
+"license_window_beta" = "ベータライセンス — 無期限";
+"popover_license" = "ライセンス";
+"popover_activate_license" = "ライセンスを認証";
+"onboarding_fans_title" = "本格的なファン制御";
+"onboarding_fans_subtitle" = "静かなブラウジングから熱ストレステストまで、3つのモードですべてをカバー。常にライブ表示付き。";
+"onboarding_presets_title" = "プリセット";
+"onboarding_presets_subtitle" = "よく使う構成を保存して、2クリックで切り替えられます。";
+"onboarding_siri_title" = "SiriとShortcuts連携";
+"onboarding_siri_subtitle" = "AirwayはApp Intentsを搭載。ファンを自動化ワークフローに組み込めます。";
+"onboarding_menubar_title" = "ネイティブなメニューバーUI";
+"onboarding_menubar_subtitle" = "ファン速度・モード選択・温度をまとめたクリーンなポップオーバーに、ワンクリックでアクセス。";
+"onboarding_back" = "戻る";
+"onboarding_helper_note" = "Airwayはファン制御に小さなシステムヘルパーを使用します。macOSが一度だけパスワードを求める場合があります。";
+
+/* Appearance options */
+"popover_disable_liquid_glass" = "Liquid Glassを無効にする";
+"popover_appearance" = "外観";
+"appearance_light" = "ライト";
+"appearance_system" = "システム";
+"appearance_dark" = "ダーク";
+
+/* Fan control diagnostics & thermal safety */
+"popover_fan_control_unsupported" = "このMacのファームウェアはファンの手動制御を拒否しました。";
+"popover_thermal_override" = "高温のため、安全のためファンを最大にしました。温度が下がると元のモードに戻ります。";
