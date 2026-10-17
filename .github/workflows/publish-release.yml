@@ -1,0 +1,52 @@
+name: Publish release
+
+# Puts an Airway DMG on the Releases page. Add the release notes at
+# .github/releases/v<version>.md, then run this from the Actions tab with
+# the version, the DMG's download URL and its SHA-256.
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version, like 0.9.0"
+        required: true
+      dmg_url:
+        description: "Direct download URL of the DMG"
+        required: true
+        default: "https://jc.didthat.lol/airway/updates/releases/Airway-latest.dmg"
+      sha256:
+        description: "SHA-256 of the DMG (shasum -a 256 Airway.dmg)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      VERSION: ${{ inputs.version }}
+      DMG_URL: ${{ inputs.dmg_url }}
+      DMG_SHA256: ${{ inputs.sha256 }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check inputs
+        run: |
+          [[ "$VERSION" =~ ^[0-9]+(\.[0-9]+){1,2}$ ]] || { echo "::error::Version must look like 0.9.0"; exit 1; }
+          [[ "$DMG_SHA256" =~ ^[0-9a-f]{64}$ ]] || { echo "::error::SHA-256 must be 64 lowercase hex characters"; exit 1; }
+          [[ "$DMG_URL" == https://* ]] || { echo "::error::The DMG URL must use https"; exit 1; }
+          test -f ".github/releases/v$VERSION.md" || { echo "::error::Add .github/releases/v$VERSION.md first"; exit 1; }
+
+      - name: Download and verify the DMG
+        run: |
+          curl -fsSL --retry 3 -o "Airway-$VERSION.dmg" "$DMG_URL"
+          echo "$DMG_SHA256  Airway-$VERSION.dmg" | sha256sum -c -
+
+      - name: Create the release
+        run: |
+          gh release create "v$VERSION" "Airway-$VERSION.dmg" \
+            --title "Airway $VERSION" \
+            --notes-file ".github/releases/v$VERSION.md" \
+            --target "$GITHUB_SHA"
