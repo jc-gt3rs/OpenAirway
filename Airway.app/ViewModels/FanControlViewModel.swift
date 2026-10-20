@@ -122,6 +122,16 @@ final class FanControlViewModel: ObservableObject {
 
     private let client = HelperClient.shared
     private var refreshTask: Task<Void, Never>?
+    private var menuBarTask: Task<Void, Never>?
+
+    /// True while the popover is open (between start/stopMonitoring).
+    private(set) var isMonitoring = false
+    /// The latest readings for the menu bar. Not published: the closed
+    /// popover must not re-render for them.
+    private(set) var menuBarFans: [FanInfoDTO] = []
+    private(set) var menuBarTemperature: Double = 0
+    /// Called on the main actor after every menu-bar sample.
+    var onMenuBarSample: (() -> Void)?
     private var wakeObserver: NSObjectProtocol?
 
     /// Consecutive refresh failures. The "Enable the helper" screen is
@@ -158,8 +168,26 @@ final class FanControlViewModel: ObservableObject {
         }
     }
 
+    /// Reads fan speed and temperature for the menu bar every two seconds,
+    /// for the app's whole life, without touching published state.
+    @MainActor
+    func startMenuBarSampling() {
+        menuBarTask?.cancel()
+        menuBarTask = Task {
+            while !Task.isCancelled {
+                if !isApplyingChange {
+                    if let fans = try? await client.fetchFanInfo() { menuBarFans = fans }
+                    if let temp = try? await client.fetchSystemTemperature() { menuBarTemperature = temp }
+                    onMenuBarSample?()
+                }
+                try? await Task.sleep(nanoseconds: 2_000_000_000)
+            }
+        }
+    }
+
     @MainActor
     func startMonitoring() {
+        isMonitoring = true
         refreshTask?.cancel()
         refreshTask = Task {
             while !Task.isCancelled {
@@ -174,6 +202,7 @@ final class FanControlViewModel: ObservableObject {
     }
 
     func stopMonitoring() {
+        isMonitoring = false
         refreshTask?.cancel()
         refreshTask = nil
     }

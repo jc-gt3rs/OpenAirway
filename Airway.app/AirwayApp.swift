@@ -41,7 +41,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate {
     private var lastCloseTime: Date = .distantPast
     
     // Timer to update menu bar text
-    private var updateTimer: Timer?
+    private var statusItemRenderer: StatusItemRenderer?
     
     func applicationDidFinishLaunching(_ notification: Notification) {
         // Capture uncaught exceptions and upload any crash from the previous run.
@@ -83,14 +83,11 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate {
         
         setupPopover()
         setupStatusItem()
-        viewModel.startMonitoring()
+        // The menu bar has its own lightweight sampler; the popover's
+        // refresh runs only while the popover is open (see popoverWillShow).
+        viewModel.onMenuBarSample = { [weak self] in self?.updateStatusBar() }
+        viewModel.startMenuBarSampling()
         
-        // Timer to refresh status item
-        updateTimer = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { [weak self] _ in
-            Task { @MainActor in
-                self?.updateStatusBar()
-            }
-        }
 
         // Publish the ready delegate LAST so App Intents only ever see a fully
         // initialized app (license evaluated, view model live).
@@ -151,17 +148,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate {
         )
             .frame(width: 320)
             .fixedSize(horizontal: false, vertical: true)
-            .onAppear {
-                Task { @MainActor in
-                    self.viewModel.startMonitoring()
-                    self.licenseManager.refreshTrialStatusFromServer()
-                }
-            }
-            .onDisappear {
-                Task { @MainActor in
-                    self.viewModel.stopMonitoring()
-                }
-            }
+
             
         let hostingController = PopoverContentHostingController(rootView: rootView)
         if #available(macOS 14.0, *) {
@@ -183,10 +170,11 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
        
         if let button = statusItem.button {
-            button.image = NSImage(systemSymbolName: AirwaySymbol.fan.resolved, accessibilityDescription: "Airway")
             button.action = #selector(togglePopover(_:))
             button.target = self
         }
+        statusItemRenderer = StatusItemRenderer(statusItem: statusItem, symbolName: AirwaySymbol.fan.resolved)
+        updateStatusBar()
     }
 
     @objc private func togglePopover(_ sender: Any?) {
@@ -246,92 +234,38 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate {
     
     func popoverDidClose(_ notification: Notification) {
         lastCloseTime = Date()
+        // SwiftUI's onDisappear never fires when an NSPopover closes, so the
+        // popover's refresh is stopped here — otherwise it re-rendered the
+        // closed popover every two seconds, forever.
+        viewModel.stopMonitoring()
     }
 
     /// Size the popover before it is drawn, so macOS 13 opens at the right size
     /// rather than opening clipped and correcting itself a frame later. No-op
     /// on macOS 14+, where `popoverSizing` is nil.
     func popoverWillShow(_ notification: Notification) {
+        viewModel.startMonitoring()
+        licenseManager.refreshTrialStatusFromServer()
         popoverSizing?.synchronizePopoverContentSize()
     }
     
+    /// Shows the latest readings in the menu bar. Called after every
+    /// menu-bar sample; the renderer ignores calls that change nothing.
     private func updateStatusBar() {
-        guard let button = statusItem.button else { return }
         let showRPM = viewModel.showRPMInMenuBar
         let showTemp = viewModel.showTempInMenuBar
-        let showIcon = viewModel.showIconInMenuBar
         let useF = viewModel.useFahrenheit
-        
-        let rpm = Int(viewModel.fans.map(\.currentRPM).max() ?? 0)
-        let tempC = viewModel.systemTemperature
+
+        let rpm = Int(viewModel.menuBarFans.map(\.currentRPM).max() ?? 0)
+        let tempC = viewModel.menuBarTemperature
         let tempVal = useF ? Int(round(tempC * 9.0/5.0 + 32.0)) : Int(round(tempC))
         let tempStr = "\(tempVal)°\(useF ? "F" : "C")"
-        
-        // Never force-unwrap a system symbol: it resolves to nil on any macOS
-        // that predates the glyph, and this runs on a repeating timer, so a nil
-        // here takes the whole app down a couple of seconds after launch.
-        let fanImage = NSImage(systemSymbolName: AirwaySymbol.fan.resolved, accessibilityDescription: "Airway")
-        fanImage?.isTemplate = true
-        let drawIcon = showIcon && fanImage != nil
-        
-        if showRPM || showTemp {
-            let text: String
-            let textWidth: CGFloat
-            let fontSize: CGFloat
-            
-            if showRPM && showTemp {
-                text = "\(tempStr)\n\(rpm) RPM"
-                textWidth = 54 // fixed width for stacked
-                fontSize = 9.5
-            } else if showRPM {
-                text = "\(rpm) RPM"
-                textWidth = 60
-                fontSize = 11.0
-            } else {
-                text = tempStr
-                textWidth = 36
-                fontSize = 11.0
-            }
-            
-            let font = NSFont.monospacedDigitSystemFont(ofSize: fontSize, weight: .medium)
-            let paragraphStyle = NSMutableParagraphStyle()
-            paragraphStyle.alignment = .left
-            let attributes: [NSAttributedString.Key: Any] = [
-                .font: font,
-                .paragraphStyle: paragraphStyle,
-                .foregroundColor: NSColor.headerTextColor
-            ]
-            
-            let attrString = NSAttributedString(string: text, attributes: attributes)
-            let textSize = attrString.size()
-            
-            let iconWidth = drawIcon ? (fanImage?.size.width ?? 0) + 4 : 0
-            let totalWidth = iconWidth + textWidth
-            let imageSize = NSSize(width: totalWidth, height: 22)
-            
-            let combinedImage = NSImage(size: imageSize)
-            combinedImage.lockFocus()
-            
-            let contentWidth = iconWidth + ceil(textSize.width)
-            let startX = max(0, (totalWidth - contentWidth) / 2.0)
-            
-            if drawIcon, let fanImage {
-                fanImage.draw(at: NSPoint(x: startX, y: (22 - fanImage.size.height) / 2), from: .zero, operation: .sourceOver, fraction: 1.0)
-            }
-            
-            let textRect = NSRect(x: startX + iconWidth, y: (22 - textSize.height) / 2, width: ceil(textSize.width), height: textSize.height)
-            attrString.draw(in: textRect)
-            
-            combinedImage.unlockFocus()
-            combinedImage.isTemplate = true
-            button.image = combinedImage
-            button.title = ""
-        } else {
-            button.image = fanImage
-            button.title = fanImage == nil ? "Airway" : ""
-        }
-    }
-}
+
+        var lines: [String] = []
+        if showTemp { lines.append(tempStr) }
+        if showRPM { lines.append("\(rpm) RPM") }
+        statusItemRenderer?.render(.init(showsIcon: viewModel.showIconInMenuBar || lines.isEmpty, lines: lines))
+    }}
 
 @main
 struct AirwayApp: App {
