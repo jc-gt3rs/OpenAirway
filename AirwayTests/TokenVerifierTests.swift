@@ -70,4 +70,43 @@ final class TokenVerifierTests: XCTestCase {
         let sig = base64URL(Data(repeating: 0x01, count: 64))
         XCTAssertNil(TokenVerifier.verify(token: "\(header).\(payload).\(sig)"))
     }
+
+    // MARK: - License types (incident 2026-10-28)
+
+    private func payload(type: String) -> Data {
+        try! JSONSerialization.data(withJSONObject: [
+            "type": type,
+            "email": "student@example.edu",
+            "machineId": "M1",
+            "licenseId": "L1",
+            "iat": 1_800_000_000,
+            "exp": 1_900_000_000,
+            "maxMachines": 1
+        ])
+    }
+
+    func testStudentLicenseDecodesAsPaid() throws {
+        // Student licenses were rejected as "an invalid token" because the
+        // app only knew beta/trial/paid.
+        let token = try XCTUnwrap(TokenVerifier.decodePayload(payload(type: "student")),
+                                  "a student token must decode")
+        XCTAssertEqual(token.type, .paid)
+        XCTAssertEqual(token.licenseName, "student")
+        XCTAssertEqual(token.maxMachines, 1)
+    }
+
+    func testUnknownFutureLicenseTypeDecodesAsPaid() throws {
+        // A type the server adds later must never lock users out again.
+        let token = try XCTUnwrap(TokenVerifier.decodePayload(payload(type: "education-site-license")))
+        XCTAssertEqual(token.type, .paid)
+        XCTAssertEqual(token.licenseName, "education-site-license")
+    }
+
+    func testKnownTypesStillDecodeAsThemselves() throws {
+        for (raw, expected) in [("beta", LicenseToken.TokenType.beta), ("trial", .trial), ("paid", .paid)] {
+            let token = try XCTUnwrap(TokenVerifier.decodePayload(payload(type: raw)))
+            XCTAssertEqual(token.type, expected, raw)
+            XCTAssertEqual(token.licenseName, raw)
+        }
+    }
 }

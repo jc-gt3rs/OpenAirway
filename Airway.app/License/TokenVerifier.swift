@@ -10,13 +10,26 @@ import CryptoKit
 
 /// Decoded license token payload. Only trusted after ES256 signature verification.
 struct LicenseToken: Equatable {
+    /// What the license entitles the Mac to. Decoding is deliberately
+    /// lenient: the server may add license types the app doesn't know yet
+    /// (it added `student` in August 2026), and a closed enum rejected every
+    /// such token as invalid, locking those customers out. Anything other
+    /// than `beta` or `trial` is a purchased license, so it gets `paid`
+    /// behaviour; the real name is kept in `licenseName`.
     enum TokenType: String, Codable, Equatable {
         case beta
         case trial
         case paid
+
+        init(from decoder: Decoder) throws {
+            let raw = try decoder.singleValueContainer().decode(String.self)
+            self = TokenType(rawValue: raw) ?? .paid
+        }
     }
 
     let type: TokenType
+    /// The license type exactly as the server named it ("paid", "student"…).
+    let licenseName: String
     let email: String
     let machineId: String?
     let licenseId: String
@@ -133,10 +146,12 @@ enum TokenVerifier {
     }
 
     /// Decodes the JWT payload JSON into a `LicenseToken`.
-    private static func decodePayload(_ data: Data) -> LicenseToken? {
+    /// Internal (not private) for tests; production only calls it after the
+    /// signature has verified.
+    static func decodePayload(_ data: Data) -> LicenseToken? {
         // Decode into a flexible structure first to handle optional `exp`
         struct JWTPayload: Decodable {
-            let type: LicenseToken.TokenType
+            let type: String
             let email: String
             let machineId: String?
             let licenseId: String
@@ -148,8 +163,13 @@ enum TokenVerifier {
 
         do {
             let payload = try JSONDecoder().decode(JWTPayload.self, from: data)
+            let type = LicenseToken.TokenType(rawValue: payload.type) ?? .paid
+            if LicenseToken.TokenType(rawValue: payload.type) == nil {
+                NSLog("[Airway] License type '\(payload.type)' isn't one this version knows; treating it as paid.")
+            }
             return LicenseToken(
-                type: payload.type,
+                type: type,
+                licenseName: payload.type,
                 email: payload.email,
                 machineId: payload.machineId,
                 licenseId: payload.licenseId,
